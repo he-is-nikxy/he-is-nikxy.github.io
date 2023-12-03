@@ -1,0 +1,433 @@
+
+.aboutDiv {
+    width: 100%;
+    height: 250vh;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-top: 50px;
+}
+
+
+h1 {
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+h2 {
+    margin-left: 50px;
+    margin-right: 50px;
+    letter-spacing: 1px;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.containerImg {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .boxImg {
+    margin: auto;
+    width: 30vmin;
+    height: 30vmin;
+    border: 1px dashed rgba(255,255,255,0.4);
+    position: relative;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      border-radius: 50%;
+      border: 1px dashed rgba(255,255,255,0.4);
+      transform: scale(1.42);
+    }
+  }
+  
+  .spin-containerImg {
+    width: 100%;
+    height: 100%;
+    animation: spin 12s ease-in-out infinite alternate;
+    position: relative;
+  }
+  
+  .shapeImg {
+    width: 100%;
+    height: 100%;
+    transition: border-radius 1s ease-out;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    animation: morph 8s ease-in-out infinite both alternate;
+    position: absolute;
+    overflow: hidden;
+    z-index: 5;
+  }
+  
+  .bdImg {
+    width: 142%;
+    height: 142%;
+    position: absolute;
+    left: -21%;
+    top: -21%;
+    background: white;
+    background-size: 100%;
+    background-position: center center;
+    display: flex;
+    /* color: #003; */
+    font-size: 5vw;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    animation: spin 12s ease-in-out infinite alternate-reverse;
+    opacity: 1;
+    z-index: 2;
+  }
+
+  .bdImg > img {
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  @keyframes morph {
+    0% {border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;} 
+    100% {border-radius: 40% 60%;} 
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+
+
+#rct {
+  color: hsl(0, 0%, 28%);
+  font-size: 50px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 7px;
+  cursor: pointer;
+}
+
+#rct span {
+  transition: 0.5s ease-out;
+}
+
+#rct:hover span:nth-child(1) {
+  margin-right: 5px;
+}
+
+
+#rct:hover span {
+  color: aqua;
+  text-shadow: 0 0 0 aqua, 0 0 20px aqua, 0 0 40px aqua;
+}
+
+#content > span {
+  cursor: pointer;
+  transition: 0.5s ease-out;
+}
+
+#content:hover span {
+  margin-right: 5px;
+  color: aqua;
+  text-shadow: 0 0 0 aqua, 0 0 20px aqua, 0 0 40px aqua;
+}
+
+
+
+
+#main {
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 130vh;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  background-image: url(https://i.pinimg.com/originals/da/6e/97/da6e971eeae725c9e089b8145bd77531.gif);
+  background-size: cover;
+}
+
+#skillsContentDiv {
+  width: auto;
+  height: 80%;
+  /* border: 2px solid blue; */
+}
+
+#toolsContentDiv {
+  width: auto;
+  height: 80%;
+  /* border: 2px solid blue; */
+}
+
+#mindsetsContentDiv {
+  width: auto;
+  height: 80%;
+  /* border: 2px solid blue; */
+}
+
+.toolsCircle {
+  width: 75px;
+  height: 75px;
+  border-radius: 10px;
+  background-color: white;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+  padding: 2px;
+}
+
+.skillsCircle {
+  width: 75px;
+  height: 75px;
+  border-radius: 10px;
+  background-color: white;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+  padding: 2px;
+}
+
+.mindsetsCircle {
+  width: 75px;
+  height: 75px;
+  border-radius: 10px;
+  background-color: white;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+  padding: 2px;
+}
+
+
+#toolsCircle1 {
+  background-image: url(https://images.velog.io/images/hdy20201004/post/8a33d045-b496-4086-98d3-6fe9bb8629e5/git_logo.png);
+  background-size: cover;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+#toolsCircle2 {
+  background-image: url(https://static.vecteezy.com/system/resources/previews/017/119/660/original/github-logo-git-hub-icon-with-text-on-white-and-black-background-free-vector.jpg);
+  background-size: cover;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+#toolsCircle3 {
+  background-image: url(https://blog.openreplay.com/assets/hero_1hYFXb.png);
+  background-size: cover;
+  background-position-x: center;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+#toolsCircle4 {
+  background-image: url(https://www.elite-corner.com/wp-content/uploads/2022/05/Chakra-UI-Setup-in-React-.png);
+  background-size: cover;
+  background-position-x: center;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+#toolsCircle5 {
+  background-image: url(https://sp-ao.shortpixel.ai/client/q_lossy,ret_img,w_240,h_240/https://richcontentdesign.com/wp-content/uploads/2019/10/greensock@2x.png);
+  background-size: cover;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+#toolsCircle6 {
+  background-image: url(https://w7.pngwing.com/pngs/379/406/png-transparent-netlify-logos-brands-icon.png);
+  background-size: cover;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+
+
+#skillsCircle1 {
+  background-image: url(https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5.png);
+  background-size: cover;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+#skillsCircle2 {
+  background-image: url(https://w7.pngwing.com/pngs/696/424/png-transparent-logo-css-css3-thumbnail.png);
+  background-size: cover;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+#skillsCircle3 {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png);
+  background-size: cover;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+#skillsCircle4 {
+  background-image: url(https://codersnack.com/assets/images/logo-reactjs.png);
+  background-size: cover;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+#skillsCircle5 {
+  background-image: url(https://static-00.iconduck.com/assets.00/npm-icon-2048x2048-3xqnd60o.png);
+  background-size: cover;
+  cursor: pointer;
+  /* border-radius: 100%; */
+  transition: 0.2s ease-out;
+}
+#skillsCircle6 {
+  background-image: url(https://camo.githubusercontent.com/792f7fce1ff8bfac6d0524a21b69161cdc6080a3c4e39979f21d5f8489d6fdd3/68747470733a2f2f692e626c6f67732e65732f3534356366382f6573362d6c6f676f2f6f726967696e616c2e706e67);
+  background-size: cover;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+
+
+#mindsetsCircle1 {
+  background-image: url(https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX49378779.jpg);
+  background-size: cover;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+#mindsetsCircle2 {
+  background-image: url(https://e7.pngegg.com/pngimages/901/614/png-clipart-computer-icons-creativity-innovation-icon-design-idea-others-search-engine-optimization-hand.png);
+  background-size: cover;
+  background-position-x: center;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+#mindsetsCircle3 {
+  background-image: url(https://www.growthforce.com/hubfs/Business%20Growth%20Stages.jpeg);
+  background-size: cover;
+  background-position-x: right;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+#mindsetsCircle4 {
+  background-image: url(https://piccalillyconnects.nl/wp-content/uploads/2020/05/Time-Management-Tip-1080x675.jpg);
+  background-size: cover;
+  background-position-x: center;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+
+
+#toolsHeading {
+  font-family: cursive;
+  font-size: 25px;
+  transition: 0.5s ease-out;
+}
+#skillsHeading {
+  font-family: cursive;
+  font-size: 25px;
+  transition: 0.5s ease-out;
+}
+#mindsetsHeading {
+  font-family: cursive;
+  font-size: 25px;
+  transition: 0.5s ease-out;
+}
+
+#tools:hover {
+  color: aqua;
+  text-shadow: 0 0 0 aqua, 0 0 20px aqua, 0 0 40px aqua;
+  cursor: pointer;
+}
+#skills:hover {
+  color: aqua;
+  text-shadow: 0 0 0 aqua, 0 0 20px aqua, 0 0 40px aqua;
+  cursor: pointer;
+}
+#mindsets:hover {
+  color: aqua;
+  text-shadow: 0 0 0 aqua, 0 0 20px aqua, 0 0 40px aqua;
+  cursor: pointer;
+}
+
+
+#toolsCircle1:hover {
+  box-shadow: 0 0 0 aqua, 0 0 10px aqua, 0 0 30px aqua;
+}
+#toolsCircle2:hover {
+  box-shadow: 0 0 0 aqua, 0 0 10px aqua, 0 0 30px aqua;
+}
+#toolsCircle3:hover {
+  box-shadow: 0 0 0 aqua, 0 0 10px aqua, 0 0 30px aqua;
+}
+#toolsCircle4:hover {
+  box-shadow: 0 0 0 aqua, 0 0 10px aqua, 0 0 30px aqua;
+}
+#toolsCircle5:hover {
+  box-shadow: 0 0 0 aqua, 0 0 10px aqua, 0 0 30px aqua;
+}
+#toolsCircle6:hover {
+  box-shadow: 0 0 0 aqua, 0 0 10px aqua, 0 0 30px aqua;
+}
+
+
+#skillsCircle1:hover {
+  box-shadow: 0 0 0 aqua, 0 0 10px aqua, 0 0 30px aqua;
+}
+#skillsCircle2:hover {
+  box-shadow: 0 0 0 aqua, 0 0 10px aqua, 0 0 30px aqua;
+}
+#skillsCircle3:hover {
+  box-shadow: 0 0 0 aqua, 0 0 10px aqua, 0 0 30px aqua;
+}
+#skillsCircle4:hover {
+  box-shadow: 0 0 0 aqua, 0 0 10px aqua, 0 0 30px aqua;
+}
+#skillsCircle5:hover {
+  box-shadow: 0 0 0 aqua, 0 0 10px aqua, 0 0 30px aqua;
+}
+#skillsCircle6:hover {
+  box-shadow: 0 0 0 aqua, 0 0 10px aqua, 0 0 30px aqua;
+}
+
+
+
+#mindsetsCircle1:hover {
+  box-shadow: 0 0 0 aqua, 0 0 10px aqua, 0 0 30px aqua;
+}
+#mindsetsCircle2:hover {
+  box-shadow: 0 0 0 aqua, 0 0 10px aqua, 0 0 30px aqua;
+}
+#mindsetsCircle3:hover {
+  box-shadow: 0 0 0 aqua, 0 0 10px aqua, 0 0 30px aqua;
+}
+#mindsetsCircle4:hover {
+  box-shadow: 0 0 0 aqua, 0 0 10px aqua, 0 0 30px aqua;
+}
+
+
+
+
+#expand {
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+#expand > .expandSpan {
+  text-decoration: underline;
+}
+#expand > .shrinkSpan {
+  text-decoration: underline;
+}
+
+#expand > .expandSpan:hover {
+  transition: 0.5s;
+  letter-spacing: 10px;
+  cursor: pointer;
+}
+
+#expand > .shrinkSpan:hover {
+  transition: 0.5s;
+  letter-spacing: 0;
+  cursor: pointer;
+}

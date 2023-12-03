@@ -1,0 +1,52 @@
+.homeDiv {
+    width: 100%;
+    height: 100vh;
+    margin-top: -60px;
+    /* background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjkfmHVytQ1VNHFT0nFMTVYGdgKXMrEZw1mSzWRdRDh4Z0V78irFqK7vK4jHG1nnWxKhR0f-Br0Q3NhCu7adza-BdboR3Ttaadd6C597vRHtCqETjlc8IvBt-3UF6vV7MfQLpFUUt4J_KaqhPqu5yN42DHaPbAIENChW8fm5eRzoKR90oy6Jejlh5snOwHr/s2048/Colonized%20Mars%20-%20Martian%20City%20lights%20from%20space%20%28via%20Mars%20City%20Design%29_wallpaper.jpg); */
+    /* background-image: url(https://i.pinimg.com/originals/8d/af/09/8daf0940c753e081ffdf49b3df42cd7c.gif); */
+    /* background-image: url(https://cdn.wallpapersafari.com/85/77/7Ln3Fb.gif); */
+    /* background-image: url(https://wallpapercave.com/wp/wp2757832.gif); */
+    /* background-image: url(https://64.media.tumblr.com/1f4dad113fe68ce7879298578ee6439e/2ebd75ad4ab9784a-5b/s540x810/ba2a8514c3ecb5a3c40e1d534d90c4e1144407a4.gif); */
+    /* background-image: url(https://miro.medium.com/v2/resize:fit:1400/1*KN7zbaWkbm5E71zZWfTf7A.gif); */
+    background-image: url(https://images.alphacoders.com/743/74353.jpg);
+    background-size: 90%;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box {
+    margin-top: 30vh;
+    width: 50%;
+    color: white;
+    margin-right: 100px;
+}
+
+.hello {
+    font-size: xx-large;
+}
+
+.myName {
+    font-style: oblique;
+    font-family: cursive;
+    font-size: 50px;
+}
+
+.para1 {
+    font-size: xx-large;
+    color: green;
+}
+
+.para2 {
+    font-size: xx-large;
+    margin-left: 20px;
+    color: rgb(251, 104, 129);
+}
+
+.imgGifs {
+    margin-top: 30px;
+}
