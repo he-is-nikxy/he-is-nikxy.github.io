@@ -1,0 +1,323 @@
+/* Page 13 Contact Form */
+
+#page13 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container {
+    min-height: 95vh;
+    width: 95%;
+    border-radius: 2rem;
+    background: #3e3e3e;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    /* border: 2px solid red; */
+}
+
+.contact-container form {
+    width: 55vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgb(41, 41, 41);
+    border-radius: 2rem;
+    backdrop-filter: blur(10px);
+    background: white;
+    flex-wrap: wrap;
+    overflow: hidden;
+    /* border: 2px solid black; */
+}
+
+.contact-container form h1 {
+    color: #000;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contact-container form input {
+    width: 40%;
+    height: 3rem;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 0.1rem solid #000;
+    font-size: 1.2rem;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+.contact-container form input::placeholder {
+    color: black;
+}
+
+.contact-container form #lastName,
+.contact-container form #mobile {
+    margin-left: 20px;
+}
+
+.contact-container form div {
+    width: 85%;
+    overflow: hidden;
+}
+
+.contact-container form div textarea {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #000;
+    color: #000;
+    font-size: 1.2rem;
+    padding: 10px;
+    outline: none;
+    width: 95%;
+    min-height: 6rem;
+    max-height: 6rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 1rem;
+    margin-left: 20px;
+    resize: none;
+}
+
+.contact-container form div textarea::placeholder {
+    color: #000;
+}
+
+textarea::-webkit-scrollbar {
+    width: 1em;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: rgba(194, 194, 194, 0.713);
+}
+
+.contact-container form div #button {
+    border: none;
+    background: #000000;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    color: #fff;
+    width: 7rem;
+    height: 2rem;
+    padding: 0;
+    margin-bottom: 2rem;
+    transition: 0.3s ease;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-left: 20px;
+}
+
+.contact-container form div #button:hover {
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #000000;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+}
+
+.contact-container .contact-me {
+    width: 30vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 3vh;
+    /* border: 2px solid #000000; */
+    /* background-color: rgb(255, 255, 255); */
+    color: black;
+    /* box-shadow: 20px 20px 50px rgb(41, 41, 41); */
+    border-radius: 2rem;
+    backdrop-filter: blur(10px);
+}
+
+.contact-container .contact-me #contactLinks {
+    /* border: 2px solid rgb(0, 0, 0); */
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    width: 80%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 0 3vh;
+    border-radius: 2vh;
+}
+
+.contact-container .contact-me #contactMap {
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    width: 80%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* color: #fff; */
+    padding: 3vh;
+    border-radius: 2vh;
+
+}
+
+.contact-container .contact-me #contactMap div h3 {
+    font-weight: 400;
+    /* background-color: #000; */
+    /* font-style: normal; */
+}
+
+.contact-container .contact-me a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    transition: all ease 0.5s;
+    /* font-family: "Poppins", sans-serif; */
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contact-container .contact-me a:hover {
+    /* color: #fff; */
+    letter-spacing: 0.1rem;
+}
+
+
+
+@media (max-width: 1000px) {
+
+    .contact-container {
+        border-radius: 2rem;
+        /* background: #E4E0DD; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+        padding: 2vh;
+    }
+
+    .contact-container .contact-me {
+        width: 90vw;
+        height: 50%;
+        gap: 10%;
+        flex-direction: row;
+        padding: 2rem;
+        /* border: 2px solid red; */
+    }
+
+    .contact-container .form-div {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .contact-container form {
+        width: 80%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        box-shadow: 20px 20px 50px rgb(41, 41, 41);
+        border-radius: 2rem;
+        /* background: rgb(255, 145, 0); */
+        backdrop-filter: blur(10px);
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .contact-container .contact-me h3 {
+        font-size: 1rem;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .contact-container .contact-me {
+        flex-direction: column;
+        gap: 3vh;
+        text-align: center;
+        width: 90%;
+    }
+
+    .contact-container .contact-me a {
+        font-size: 1.5rem;
+    }
+
+    .contact-container .contact-me #contactMap div h3 {
+        font-size: 1.5rem;
+    }
+
+    .contact-container form {
+        margin-bottom: 10vh;
+    }
+}
+
+@media (max-width: 550px) {
+    .contact-container .contact-me a {
+        font-size: 1.3rem;
+    }
+
+    .contact-container .contact-me #contactMap div h3 {
+        font-size: 1.3rem;
+    }
+}
+
+
+@media (max-width: 420px) {
+    .contact-container .contact-me #contactMap div h3  {
+        font-size: 1.3rem;
+    }
+
+    .contact-container .contact-me a {
+        font-size: 1.1rem;
+    }
+
+    .contact-container form {
+        width: 100%;
+    }
+
+    .contact-container form input {
+        width: 80%;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .contact-container .contact-me #contactMap div h3 {
+        font-size: 1rem;
+    }
+
+    .contact-container .contact-me a {
+        font-size: 1rem;
+    }
+
+    .contact-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 280px) {
+    .contact-container form h1 {
+        font-size: 1.5rem;
+    }
+}

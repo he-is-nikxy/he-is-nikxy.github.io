@@ -1,0 +1,23 @@
+/* Leaflet default styles */
+@import url('https://unpkg.com/leaflet@1.9.3/dist/leaflet.css');
+
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+
+  color-scheme: light dark;
+  color: rgb(255, 255, 255);
+  background-color: #3e3e3e;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
